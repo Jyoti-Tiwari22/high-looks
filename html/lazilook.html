@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game Card</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="lazilook.css">
+        <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="http://kit.fontawesome.com/f36990690a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="left">
+            <div class="logo">
+                <span>L</span>
+                <span>AZI</span>
+                <span>ooks</span>
+            </div>
+            <div class="tabs">
+                <div class="options">
+                    <a id="casual">Casual</a>
+                    <a id="formal">Formal</a>
+                    <a id="classic">Classic</a>
+                    <a id="funky">Funky</a>
+                    <a id="damage">Damage</a>
+                    <a id="lazilob">Lazi-Lob</a>
+                </div>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="packed">         
+                <div class="casual">
+            <div class="model">
+                <div class="box">
+                    <div class="motionbox">
+                        <img src="IMG_20200909_135642.jpg">
+                        <img src="fash3.jpg">
+                        <img src="fash2.jpg">
+                        <img src="fash5.jpg">
+                    </div>
+                </div>
+            </div>
+           
+           
+            <div class="palletes">
+                <div class="colors">
+                    <div class="palleteOne">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                        <div class="four"></div>
+                    </div>
+                    <div class="palleteTwo">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                        <div class="four"></div>
+
+                    </div>
+                    <div class="palleteThree">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                        <div class="four"></div>
+                    </div>
+                    <div class="palleteFour">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                        <div class="four"></div>
+                    </div>
+                </div>
+                <div class="shop">
+                    <span id="myntra"><img src="myntra.jpg"></span>
+                    <span id="ajio"><img src="ajio.jpg"></span>
+                    <span id="shen"><img src="amazon.png"></span>
+                    <span id="flipcart"><img src="flipcart.jpg"></span>
+                </div>
+            </div>
+         </div>
+            <div class="formal"></div>
+            <div class="classic"></div>
+            <div class="funky"></div>
+            <div class="damage"></div>
+            <div class="lazilob"></div>
+            </div>
+            
+
+
+        </div>
+        <div class="right">
+            <div class="nav">
+            <a id="cas"></a>
+            <a id="for"></a>
+            <a id="cla"></a>
+            <a id="fun"></a>
+            <a id="dam"></a>
+            <a id="laz"></a>
+            </div>
+        </div>
+    </body>
+    <script>
+
+        $(document).ready(function()
+        {
+
+            $(".palleteOne").mouseover(function(){
+                $(".motionbox").css("transform","translateY(0px)");
+            });
+            $(".palleteTwo").mouseover(function(){
+                $(".motionbox").css("transform","translateY(-730px)");
+            });
+            $(".palleteThree").mouseover(function(){
+                $(".motionbox").css("transform","translateY(-1430px)");
+            });
+
+            $(".palleteFour").mouseover(function(){
+                $(".motionbox").css("transform","translateY(-2060px)");
+            });
+        
+             $("#cas").click(function()
+             {
+             $(".packed").css("transform","translateY(0vh)").css("transition","transform 0.5s linear");
+             $("#casual").css("color","#00BCD4");
+             $("#formal").css("color","#646666");
+             $("#classic").css("color","#646666");
+             $("#funky").css("color","#646666");
+             $("#damage").css("color","#646666");
+             $("#lazilob").css("color","#646666");
+
+             $("#cas").css("background","#00BCD4");
+             $("#for").css("background","#646666");
+             $("#cla").css("background","#646666");
+             $("#fun").css("background","#646666");
+             $("#dam").css("background","#646666");
+             $("#laz").css("background","#646666");
+             });
+
+             $("#casual").click(function()
+             {
+             $(".packed").css("transform","translateY(0vh)").css("transition","transform 0.5s linear");
+             $("#casual").css("color","#00BCD4");
+             $("#formal").css("color","#646666");
+             $("#classic").css("color","#646666");
+             $("#funky").css("color","#646666");
+             $("#damage").css("color","#646666");
+             $("#lazilob").css("color","#646666");
+
+             
+             $("#cas").css("background","#00BCD4");
+             $("#for").css("background","#646666");
+             $("#cla").css("background","#646666");
+             $("#fun").css("background","#646666");
+             $("#dam").css("background","#646666");
+             $("#laz").css("background","#646666");
+             });
+
+             
+             $("#for").click(function()
+             {
+                $(".packed").css("transform","translateY(-100vh)").css("transition","transform 0.5s linear");
+                $("#casual").css("color","#646666");
+                $("#formal").css("color","#00BCD4");
+                $("#classic").css("color","#646666");
+                $("#funky").css("color","#646666");
+                $("#damage").css("color","#646666");
+                $("#lazilob").css("color","#646666");
+                
+                 
+             $("#cas").css("background","#646666");
+             $("#for").css("background","red");
+             $("#cla").css("background","#646666");
+             $("#fun").css("background","#646666");
+             $("#dam").css("background","#646666");
+             $("#laz").css("background","#646666");
+             });
+
+             $("#formal").click(function()
+             {
+                $(".packed").css("transform","translateY(-100vh)").css("transition","transform 0.5s linear");
+                $("#casual").css("color","#646666");
+                $("#formal").css("color","#00BCD4");
+                $("#classic").css("color","#646666");
+                $("#funky").css("color","#646666");
+                $("#damage").css("color","#646666");
+                $("#lazilob").css("color","#646666");
+
+                $("#cas").css("background","#646666");
+                $("#for").css("background","red");
+                $("#cla").css("background","#646666");
+               $("#fun").css("background","#646666");
+               $("#dam").css("background","#646666");
+               $("#laz").css("background","#646666");
+                
+             });
+
+             
+             $("#cla").click(function()
+             {
+                $(".packed").css("transform","translateY(-200vh)").css("transition","transform 0.5s linear");
+                $("#casual").css("color","#646666");
+                $("#formal").css("color","#646666");
+                $("#classic").css("color","#00BCD4");
+                $("#funky").css("color","#646666");
+                $("#damage").css("color","#646666");
+                $("#lazilob").css("color","#646666");
+
+                $("#cas").css("background","#646666");
+                $("#for").css("background","#646666");
+                $("#cla").css("background","#00BCD4");
+               $("#fun").css("background","#646666");
+               $("#dam").css("background","#646666");
+               $("#laz").css("background","#646666");
+             });
+
+             $("#classic").click(function()
+             {
+                $(".packed").css("transform","translateY(-200vh)").css("transition","transform 0.5s linear");
+                $("#casual").css("color","#646666");
+                $("#formal").css("color","#646666");
+                $("#classic").css("color","#00BCD4");
+                $("#funky").css("color","#646666");
+                $("#damage").css("color","#646666");
+                $("#lazilob").css("color","#646666");
+
+                $("#cas").css("background","#646666");
+                $("#for").css("background","#646666");
+                $("#cla").css("background","#00BCD4");
+               $("#fun").css("background","#646666");
+               $("#dam").css("background","#646666");
+               $("#laz").css("background","#646666");
+             });
+
+
+             
+             $("#fun").click(function()
+             {
+                $(".packed").css("transform","translateY(-300vh)").css("transition","transform 0.5s linear");
+                $("#casual").css("color","#646666");
+                $("#formal").css("color","#646666");
+                $("#classic").css("color","#646666");
+                $("#funky").css("color","#00BCD4");
+                $("#damage").css("color","#646666");
+                $("#lazilob").css("color","#646666");
+
+                $("#cas").css("background","#646666");
+                $("#for").css("background","#646666");
+                $("#cla").css("background","#646666");
+               $("#fun").css("background","black");
+               $("#dam").css("background","#646666");
+               $("#laz").css("background","#646666");
+             });
+
+             $("#funky").click(function()
+             {
+                $(".packed").css("transform","translateY(-300vh)").css("transition","transform 0.5s linear");
+                $("#casual").css("color","#646666");
+                $("#formal").css("color","#646666");
+                $("#classic").css("color","#646666");
+                $("#funky").css("color","#00BCD4");
+                $("#damage").css("color","#646666");
+                $("#lazilob").css("color","#646666");
+
+                $("#cas").css("background","#646666");
+                $("#for").css("background","#646666");
+                $("#cla").css("background","#646666");
+               $("#fun").css("background","black");
+               $("#dam").css("background","#646666");
+               $("#laz").css("background","#646666");
+             });
+
+
+             $("#dam").click(function()
+             {
+                 $(".packed").css("transform","translateY(-400vh)").css("transition","transform 0.5s linear");
+                 $("#casual").css("color","#646666");
+                $("#formal").css("color","#646666");
+                $("#classic").css("color","#646666");
+                $("#funky").css("color","#646666");
+                $("#damage").css("color","#00BCD4");
+                $("#lazilob").css("color","#646666");
+
+                $("#cas").css("background","#646666");
+                $("#for").css("background","#646666");
+                $("#cla").css("background","#646666");
+               $("#fun").css("background","#646666");
+               $("#dam").css("background","rgb(240, 135, 213)");
+               $("#laz").css("background","#646666");
+             });
+
+
+             $("#damage").click(function()
+             {
+                 $(".packed").css("transform","translateY(-400vh)").css("transition","transform 0.5s linear");
+                 $("#casual").css("color","#646666");
+                $("#formal").css("color","#646666");
+                $("#classic").css("color","#646666");
+                $("#funky").css("color","#646666");
+                $("#damage").css("color","#00BCD4");
+                $("#lazilob").css("color","#646666");
+
+                $("#cas").css("background","#646666");
+                $("#for").css("background","#646666");
+                $("#cla").css("background","#646666");
+               $("#fun").css("background","#646666");
+               $("#dam").css("background","rgb(240, 135, 213)");
+               $("#laz").css("background","#646666");
+             });
+             
+             $("#laz").click(function()
+             {
+                $(".packed").css("transform","translateY(-500vh)").css("transition","transform 0.5s linear");
+                $("#casual").css("color","#646666");
+                $("#formal").css("color","#646666");
+                $("#classic").css("color","#646666");
+                $("#funky").css("color","#646666");
+                $("#damage").css("color","#646666");
+                $("#lazilob").css("color","#00BCD4");
+
+                
+                $("#cas").css("background","#646666");
+                $("#for").css("background","#646666");
+                $("#cla").css("background","#646666");
+               $("#fun").css("background","#646666");
+               $("#dam").css("background","#646666");
+               $("#laz").css("background","rgb(60, 75, 77)");
+             });
+
+                   
+             $("#lazilob").click(function()
+             {
+                $(".packed").css("transform","translateY(-500vh)").css("transition","transform 0.5s linear");
+                $("#cas").css("background","#646666");
+                $("#for").css("background","#646666");
+                $("#cla").css("background","#646666");
+               $("#fun").css("background","#646666");
+               $("#dam").css("background","#646666");
+               $("#laz").css("background","rgb(60, 75, 77)");
+             });
+
+
+
+
+
+
+            /*$("#for").click(function(e)
+             {
+                 var targetOffset = $(".formal").offset().top;
+                 $('.mid').animate({scrollTop: targetOffset}, 1500);
+                 e.preventDefault(); 
+             });
+             $("#for").click(function(e)
+             {
+                 var targetOffset = $(".formal").offset().top;
+                 $('html, body').animate({scrollTop: targetOffset}, 1500);
+                 e.preventDefault(); 
+             });
+
+             $("#cas").click(function(e)
+             {
+                 var targetOffset = $(".cas").offset().top;
+                 $('html, body').animate({scrollTop: targetOffset}, 1500);
+                 e.preventDefault(); 
+             });
+             $("#fun").click(function(e)
+             {
+                 var targetOffset = $(".funky").offset().top;
+                 $('html, body').animate({scrollTop: targetOffset}, 1500);
+                 e.preventDefault(); 
+             });
+             $("#dam").click(function(e)
+             {
+                 var targetOffset = $(".damage").offset().top;
+                 $('html, body').animate({scrollTop: targetOffset}, 1500);
+                 e.preventDefault(); 
+             });
+
+             $("#laz").click(function(e)
+             {
+                 var targetOffset = $(".damage").offset().top;
+                 $('html, body').animate({scrollTop: targetOffset}, 1500);
+                 e.preventDefault(); 
+             }); */
+
+
+        })
+      </script>
+    </html>
